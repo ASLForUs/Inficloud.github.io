@@ -1,118 +1,157 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
+
 <head>
 	<meta charset="UTF-8">
 	<!-- 优先使用 IE 最新版本和 Chrome -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <!-- 页面描述 -->
-    <meta name="description" content="不超过150个字符"/>
-    <!-- 页面关键词 -->
-    <meta name="keywords" content=""/>
-    <!-- 网页作者 -->
-    <meta name="author" content="name, email@gmail.com"/>
-    <!-- 搜索引擎抓取 -->
-    <meta name="robots" content="index,follow"/>
-    <!-- 为移动设备添加 viewport -->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
-    <!-- `width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
-  
-    <!-- iOS 设备 begin -->
-    <meta name="apple-mobile-web-app-title" content="标题">
-    <!-- 添加到主屏后的标题（iOS 6 新增） -->
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
-  
-    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
-    <!-- 添加智能 App 广告条 Smart App Banner（iOS 6+ Safari） -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <!-- 设置苹果工具栏颜色 -->
-    <meta name="format-detection" content="telphone=no, email=no"/>
-    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
-    <!-- 启用360浏览器的极速模式(webkit) -->
-    <meta name="renderer" content="webkit">
-    <!-- 避免IE使用兼容模式 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- 不让百度转码 -->
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
-    <meta name="HandheldFriendly" content="true">
-    <!-- 微软的老式浏览器 -->
-    <meta name="MobileOptimized" content="320">
-    <!-- uc强制竖屏 -->
-    <meta name="screen-orientation" content="portrait">
-    <!-- QQ强制竖屏 -->
-    <meta name="x5-orientation" content="portrait">
-    <!-- UC强制全屏 -->
-    <meta name="full-screen" content="yes">
-    <!-- QQ强制全屏 -->
-    <meta name="x5-fullscreen" content="true">
-    <!-- UC应用模式 -->
-    <meta name="browsermode" content="application">
-    <!-- QQ应用模式 -->
-    <meta name="x5-page-mode" content="app">
-    <!-- windows phone 点击无高光 -->
-    <meta name="msapplication-tap-highlight" content="no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- 页面描述 -->
+	<meta name="description" content="不超过150个字符" />
+	<!-- 页面关键词 -->
+	<meta name="keywords" content="" />
+	<!-- 网页作者 -->
+	<meta name="author" content="name, email@gmail.com" />
+	<!-- 搜索引擎抓取 -->
+	<meta name="robots" content="index,follow" />
+	<!-- 为移动设备添加 viewport -->
+	<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+	<!-- `width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
+
+	<!-- iOS 设备 begin -->
+	<meta name="apple-mobile-web-app-title" content="标题">
+	<!-- 添加到主屏后的标题（iOS 6 新增） -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+
+	<meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+	<!-- 添加智能 App 广告条 Smart App Banner（iOS 6+ Safari） -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no" />
+	<!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 不让百度转码 -->
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
 	<title></title>
-	<style >
-	html,body{
-		width:100%;
-		height:100%;
-		margin:0px;/*外边距*/
-		padding:0px;/*内边距*/
-	}
-	.a1{
-		border-bottom:solid 3px rgb(123,123,123);/*边框 线 宽 颜色 */ 
-		width:100%;
-		height:8%;
-		background-image:url(images/bj.jpg);/*设置背景图片*/
-		color:rgb(255,255,255);/*设置颜色*/
-		font-size:14px;
-	}
-	.a2{
-		/*border:solid 1px #f00;*/
-		width:100%;
-		height:92%;
-		background-image:url(images/jia.png);
-		background-size:100% 20%;/*设置背景图片的大小 分别为 宽 高 */
-	}
-	.a1_1{
-		height:100%;
-		width:20%;
-		float:left;/*浮动靠左*/
-	}
-	.a1_2{
-		height:100%;
-		line-height:300%;
-		width:60%;
-		float:left;/*浮动靠左*/
-		text-align:center;/*文字横向居中*/
-		font-size:20px;
-	}
-	.a1_3{
-		height:100%;
-		width:20%;
-		float:left;/*浮动靠左*/
-	}
-	.a1_1_1{
-		width:80%;
-		height:70%;
-		line-height:245%;
-		text-align:center;
-		background-color:rgb(156,69,0); /*背景颜色*/
-		margin:10px;
-	}
+	<style>
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			/*外边距*/
+			padding: 0px;
+			/*内边距*/
+		}
+
+		.a1 {
+			border-bottom: solid 3px rgb(123, 123, 123);
+			/*边框 线 宽 颜色 */
+			width: 100%;
+			height: 8%;
+			background-image: url(images/bj.jpg);
+			/*设置背景图片*/
+			color: rgb(255, 255, 255);
+			/*设置颜色*/
+			font-size: 14px;
+		}
+
+		.a2 {
+			/*border:solid 1px #f00;*/
+			width: 100%;
+			height: 92%;
+			background-image: url(images/jia.png);
+			background-size: 100% 20%;
+			/*设置背景图片的大小 分别为 宽 高 */
+		}
+
+		.a1_1 {
+			height: 100%;
+			width: 20%;
+			float: left;
+			/*浮动靠左*/
+		}
+
+		.a1_2 {
+			height: 100%;
+			line-height: 300%;
+			width: 60%;
+			float: left;
+			/*浮动靠左*/
+			text-align: center;
+			/*文字横向居中*/
+			font-size: 20px;
+			color: rgb(0, 0, 0);
+			/*设置颜色*/
+		}
+
+		.a1_3 {
+			height: 100%;
+			width: 20%;
+			float: left;
+			/*浮动靠左*/
+		}
+
+		.a1_1_1 {
+			width: 80%;
+			height: 70%;
+			line-height: 245%;
+			text-align: center;
+			background-color: rgb(156, 69, 0);
+			/*背景颜色*/
+			margin: 10px;
+		}
 	</style>
 </head>
+
 <body>
 	<div class="a1">
 		<div class="a1_1">
-			<div class="a1_1_1">我的书架</div>
+			<div class="a1_1_1">书架</div>
 		</div>
-		<div class="a1_2">小说阅读器</div>
+		<div class="a1_2">Library</div>
 		<div class="a1_3">
-			<div class="a1_1_1">在线搜索</div>
+			<div class="a1_1_1">One</div>
 		</div>
 	</div>
-	<div class="a2"></div>
+	<div class="a2">
+		<div style="width: 90px; margin: 0 auto; height:50px;">
+			<br />
+			<table>
+				<tr>
+					<td>
+						<a href="library\1.doc">
+							<p align="center">书名：Heros for Honor of Kings</p>
+							<p align="center">20221110</p>
+						</a>
+					</td>
+					<td width="10px">&nbsp;</td>
+				</tr>
+				<tr height="10px"></tr>
+			</table>
+		</div>
+	</div>
 </body>
+
 </html>
